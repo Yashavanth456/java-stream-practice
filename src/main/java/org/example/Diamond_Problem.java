@@ -16,7 +16,7 @@ public class Diamond_Problem implements A, B {
 
     @Override
     public void show() {
-        //A.super.show(); // Call the show method from interface A
+        A.super.show(); // Call the show method from interface A
         B.super.show(); // Call the show method from interface B
     }
 

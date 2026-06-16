@@ -123,6 +123,12 @@ public class Practice_Programs {
         String reversed = new StringBuilder(sentence).reverse().toString();
         System.out.println("Reversed sentence: " + reversed);
 
+        for (int i = sentence.length() - 1; i >= 0; i--) {
+            reversed += sentence.charAt(i);
+        }
+
+        System.out.println("Reversed sentence with out built in methods: " + reversed);
+
         String reverseEachWord = Arrays.stream(sentence.split(" "))
                 .map(word -> new StringBuilder(word).reverse().toString()).collect(Collectors.joining(" "));
         System.out.println("Reverse each word: " + reverseEachWord);
